@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--backgroundColor);
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --quickFont:  "Quicksand", sans-serif;
+  --popinFont:  "Poppins", sans-serif;
+  --segoeFont:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  --navStickyBgcolor: #0F0715;
+  --navFirstMenuColor: #36E0FF;
+  --navSecondMenuColor: #85d2e9;
+  --activeMenuColor: #2ECAFF;
+  --menuIconColor: #ffffff;
+
+  --firstgradientColor: #36E0FF;
+  --secondgradientColor: #8650F6;
+  --backgroundColor: #0F0715;
+  --homeFirstHeadingColor: #c9c9d7f1;
+  --homeSecondHeadingColor: #c9c9d7f1;
+  --primaryTextColor: #3F3E3E;
+  --secondaryTextColor: #9596AC;
+  --whiteColor: #FFFFFF;
+
+  --serviceCardBgColor: rgb(9, 1, 29);
+  --serviceCardSecondBgColor: #0F0715;
+  --serviceImgFirstBgColor: #36E0FF ;
+  --serviceImgSecondBgColor: #8650F6 ;
+  --serviceCardBorderColor: transparent ;
+  --serviceCardBorderHoverColor: #ffffff ;
+
+  --productCardFirstBgColor: #0F0715;
+  --productCardSecondBgColor: #0F0715;
+
+  --productivityBgColor: #17182d62;
+  --productivityHeaderColor: #c9c9d7f1;
+
+  --tableBgColor: #17182d62;
+  --tableTextColor: #FFFFFF;
+  --tableBorderColor: #2D2E41;
+
+  --footerBgColor: #17182d62;
+  --footerAngerTextColor: #9596AC;
+  --footerAngerHoverTextColor: #FFFFFF;
+  --footerHeaderTextColor: #9596AC;
+  --footerBorderColor: #bdbfeb62;
+  --footerIconsColor: #9596AC;
+  --footerIconsHoverColor: #36E0FF;
+  --footerBtnColor: #FFFFFF;
+  --footerMailColor: #FFFFFF;
+  --menuIconColor: #FFFFFF;
+  --socialMediaIconBgColor: #17182da7;
+  --socialMediaIconBorderColor: #36E0FF;
+
+  --mobileNavBgColor: #0F0715;
+  --mobileNavIconsColor: #36E0FF;
+  --mobileNavItemBgColor: #C7C8FC;
+  --mobileNavTextColor: #9596AC;
+  --overlayBgColor: rgba(59, 14, 237, 0.943);
+  --pricingtickIconColor: green;
+  --pricingCloseIconColor: red;
+  --pricingTextColor: rgb(191,190,204);
+  --featureHeaderColor: #BFBECC;
+  --webScrapDivBorderColor: #CAE8F5;
+  --FeatureHeaderColor: #BFBECC;
+  --tableRogBgColor: rgba(120, 95, 233, 0.084);
+  /* --tableRogBgColor: rgba(41, 41, 56, 0.784); */
+
+}

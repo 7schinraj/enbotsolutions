@@ -1,0 +1,205 @@
+.footer-container{
+    width: 100%;
+    height: 100%;
+    background-color: var(--footerBgColor);
+    padding: 0px 30pxa 0 30px;
+    box-shadow: 0 -4px 6px -2px rgba(0, 0, 0, 0.3);
+}
+.footer-menus{
+    color: var(--footerAngerTextColor);
+    font-size: 18px;
+    text-decoration: none;
+}
+.footer-first-container p{
+    color: var(--footerAngerTextColor);
+    font-size: 18px;
+
+}
+.footer-menus:hover{
+    color: var(--footerAngerHoverTextColor);
+    font-size: 18px;
+    transform: translateX(20px);
+    transition: 0.5s;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.contact{
+    color: var(--secondaryTextColor);
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+.contact-mail{
+    color: var(--footerMailColor) !important;
+    font-size: 18px;
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+.contact-mail a:hover{
+    text-decoration: underline;
+}
+.footer-datas-container{
+    width: 90%;
+    margin: 0 auto;
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    border-bottom: 1px solid var(--footerBorderColor);
+    padding: 80px 0;
+}
+.footer-first-container img{
+    width: 200px;
+    margin-bottom: 20px;
+    /* object-fit: cover; */
+}
+.footer-first-container{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-first-container h2{
+    color: var(--footerHeaderTextColor);
+}
+.foter-input-container{
+    width: 100%;
+    height: 45px;
+    position: relative;
+    display: flex;
+}
+.foter-input-container input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: var(--footerAngerTextColor);
+    font-size: 16px;
+    padding: 0px 50px 0 10px;
+    background: none;
+    border-radius: 20px;
+    box-shadow: 0 0 0 1px var(--footerBorderColor);
+}
+.foter-input-container input::placeholder{
+    color: var(--secondaryTextColor);
+    font-size: 16px;
+}
+.foter-input-container button{
+    /* width: 100%; */
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background: none;
+    border: none;
+    color: var(--footerBtnColor);
+    font-size: 20px;
+    cursor: pointer;
+}
+.enbot-social-details{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+}
+.footer-icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.f-icons{
+    color: var(--footerIconsColor);
+    font-size: 18px;
+    cursor: pointer;
+}
+.footer-p{
+    color: var(--secondaryTextColor);
+    font-size: 16px;
+    cursor: pointer;
+    word-spacing: 3px;
+}
+.last-footer-container{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.last-footer-container a{
+    text-decoration: none;
+    color: var(--secondaryTextColor);
+    font-size: 18px;
+}
+.footer-second-child{
+    width: 60%;
+    display: flex;
+}
+.ic-bg{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--socialMediaIconBgColor);
+    cursor: pointer;
+}
+.ic-bg:hover{
+    box-shadow: 0 0 0 1px var(--socialMediaIconBorderColor);
+    transition: .2s;
+}
+.ic-bg:hover .f-icons{
+    color: var(--footerIconsHoverColor);
+    transition: .2s;
+}
+@media(max-width:1200px){
+    .footer-datas-container{
+        flex-direction: column;
+        gap: 60px;
+    }
+    .footer-first-container{
+        width: 80%;
+    }
+    .footer-second-child{
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+@media(max-width:600px){
+    .footer-second-child{
+       flex-direction: column;
+       gap: 50px;
+    }
+    .contact-mail{
+        font-size: 12px !important;
+        letter-spacing: 1px;
+    }
+    .enbot-social-details{
+        flex-direction: column;
+        gap: 20px;
+        height: 100%;
+        padding: 30px 0;
+
+    }
+    .footer-datas-container {
+        padding: 50px 0;
+        width: 80%;
+    }
+    .footer-first-container{
+        gap: 14px;
+        width: 100%;
+    }
+    .footer-p{
+        word-spacing: 0;
+    }
+    .last-footer-container a{
+        font-size: 14px;
+    }
+    .footer-p{
+        font-size: 14px;
+    }
+    .f-icons{
+        font-size: 16px;
+    }
+    .footer-first-container img{
+        width: 170px;
+    }
+}

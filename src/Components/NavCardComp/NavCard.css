@@ -1,0 +1,91 @@
+.NavCard{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.LogoImg{
+    width: 75%; 
+    padding-bottom: 10px;
+}
+.NavItem{
+    list-style: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+.NavMenuIcon{
+    color: var(--mobileNavIconsColor);
+    font-size: 16px;
+    font-weight: 600;
+}
+.NavItem:hover{
+    cursor: pointer;
+    color: var(--whiteColor);
+    background: linear-gradient(200deg, var(--firstgradientColor), var(--secondgradientColor));
+}
+.NavItem:hover .NavMenu{
+    color: var(--logoTextColor);
+    transition: 0.5s;
+    transform: translate3d(10px, 0, 0);
+    width: 100%;
+    height: 100%;
+}
+.NavItem:hover .NavMenuIcon{
+    color: var(--logoTextColor);
+    transition: 0.5s;
+    transform: translate3d(10px, 0, 0);
+}
+.NavMenu{
+    text-decoration: none;
+    color: var(--mobileNavTextColor);
+    font-weight: 500;
+}
+.NavList{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 15px;
+}
+.TopSpace{
+    margin-top: 20px;
+}
+.NavItem{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.NavButton{
+    width: 100%;
+    height: 40px;
+    letter-spacing: 1px;
+    color: var(--whiteColor);
+    font-size: 14px;
+    border-radius: 10px;
+    font-family: var(--popinFont);
+    background: linear-gradient(20deg, var(--firstgradientColor), var(--secondgradientColor));
+    border: none;
+    cursor: pointer;
+}
+.NavButton:hover{
+    background: linear-gradient(200deg, var(--firstgradientColor), var(--secondgradientColor));
+}
+@media(max-width: 1200px){
+    .NavItem{
+        gap: 35px;
+    }
+    .NavList{
+        justify-content: center;
+        align-items: start;
+        text-align: start;
+    }
+}
+@media(max-width: 600px){
+    .NavMenuIcon{
+        font-size: 20px;
+    }
+    .NavItem{
+        gap: 15px;
+    }
+}

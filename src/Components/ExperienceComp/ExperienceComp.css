@@ -1,0 +1,40 @@
+.year{
+    color: var(--secondaryTextColor);
+    font-size: 55px;
+}
+.years-sec:hover .year{
+    cursor: pointer;
+    transition: 0.7s;
+    background: linear-gradient(200deg, var(--firstgradientColor), var(--secondgradientColor));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.years-sec:hover .des{
+    cursor: pointer;
+    transition: 0.7s;    
+    background: linear-gradient(200deg, var(--firstgradientColor), var(--secondgradientColor));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.des{
+    color:  #3D4151;
+    font-weight: 500;
+    font-size: 23px;
+
+}
+.years-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+@media(max-width:1200px){
+    .year{
+        font-size: 40px;
+    }
+    .des{
+        font-size: 18px;
+    }
+    
+}
