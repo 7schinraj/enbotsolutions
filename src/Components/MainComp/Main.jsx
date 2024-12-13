@@ -7,9 +7,9 @@ import WebScrapping from "../../Components/Web Scrapping/WebScrapping"
 
 
 import DarkLogo from "../../Assets/DarkLogoTheme.png";
-// import LightLogo from "../../Assets/LogoLight.png";
+import LightLogo from "../../Assets/LogoLight.png";
 // import DarkLogo from "../../Assets/MaxDarkLogo.png";
-import LightLogo from "../../Assets/MaxLightLogo.png";
+// import LightLogo from "../../Assets/MaxLightLogo.png";
 
 
 import { MdOutlineDarkMode, MdDarkMode } from "react-icons/md";
@@ -117,16 +117,27 @@ const Main = () => {
       navbar.classList.remove("sticky");
     }
   };
+  // const handleScroll = () => {
+  //   const navbar = document.getElementById("navbar");
+  //   if (window.pageYOffset > navbar.offsetTop) {
+  //     navbar.classList.add("sticky");
+  //   } else {
+  //     navbar.classList.remove("sticky");
+  //   }
+  // };
+
   const handleScroll = () => {
     const navbar = document.getElementById("navbar");
-    if (window.pageYOffset > navbar.offsetTop) {
+    const navbarHeight = navbar.offsetHeight;
+    if (window.pageYOffset > navbarHeight) {
       navbar.classList.add("sticky");
     } else {
       navbar.classList.remove("sticky");
     }
   };
-
+  
   window.addEventListener("scroll", handleScroll);
+  
 
 
   const closeForm = () => {
@@ -456,9 +467,9 @@ const Main = () => {
       </Element>
 
       <Element className="service-section">
-        <div className="service-intro-section">
+        <div name="services" id="services" className="service-intro-section">
           <div className="header-container">
-              <h2 name="services" id="services" className="sec-headers">Services</h2>
+              <h2 className="sec-headers">Services</h2>
           </div>
           <h1>Unveiling Our Unique Edge.</h1>
           <p>
@@ -524,6 +535,7 @@ const Main = () => {
           image={GrowthImg}
         />
       </Element>
+
       <Element id="features" name="features">
         <section className="features-section">
           <div className="features-container">
@@ -532,10 +544,11 @@ const Main = () => {
           </div>
         </section>
       </Element>
+
       <WebScrapping/>
       <Element id="products" name="products">
         <section>
-          <div className="service-intro-section">
+          <div className="product-intro-section">
             <div className="header-container">
               <h2 className="sec-headers">Products</h2>
             </div>
