@@ -27,6 +27,7 @@ import QueenImg from "../../Assets/Queen.png";
 import SettingsImg from "../../Assets/Settings.png";
 import BarChat from "../../Assets/BarChart.png";
 import BinocularsImg from "../../Assets/Binoculars.png";
+import { LuLogIn } from "react-icons/lu";
 import Home from "../HomeComp/Home";
 import WhoWeAre from "../WhoWeAreComp/WhoWeAre";
 import GrowthImg from "../../Assets/GrowthImg.png";
@@ -53,6 +54,7 @@ import Modal from "react-modal";
 import { EditorState } from "draft-js";
 import { Editor } from "react-draft-wysiwyg";
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
+import { BiColor } from "react-icons/bi";
 
 const SCROLL_DURATION = 1000;
 Modal.setAppElement("#root");
@@ -428,6 +430,7 @@ const Main = () => {
             <TfiMenuAlt onClick={changeToClose} className="MenuIcon" />
           )}
           {isCloseIc && <GrClose onClick={changeToMenu} className="MenuIcon" />}
+          <LuLogIn className="login-icon"/>
         </div>
 
         <div id="mobile-nav" className="mobile-nav-container mobile-view">

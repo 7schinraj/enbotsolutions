@@ -1,0 +1,303 @@
+.login-section{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 0 10%;
+}
+.assets-container{
+    width: 40%;
+}
+.login-container{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 0;
+}
+.login-logo {
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.login-container .check{
+    width: 100%;
+    padding: 13px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    outline: none;
+    background-color: #F0F8FF;
+    background: none;
+    color: #000000;
+    transition: box-shadow 0.3s, border-color 0.3s;
+    border: 1px solid red;
+}
+.login-container .check::placeholder{
+    color: red;
+}
+.login-container .check:focus {
+    border-color: #00B8D4;
+    box-shadow: 0 0 0px 1px #2ECAFF;
+}
+.login-container .checked {
+    width: 100%;
+    padding: 13px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    outline: none;
+    background-color: #F0F8FF;
+    background: none;
+    color: #000000;
+    transition: box-shadow 0.3s, border-color 0.3s;
+    border: 1px solid #CBCBCB;
+}
+.login-container .checked::placeholder{
+    color: #A0A0A9;
+}
+.login-container .checked:focus {
+    border-color: #00B8D4;
+    box-shadow: 0 0 0px 1px #2ECAFF;
+}
+.input-containers{
+    width: 80%;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-container button {
+    width: 80%;
+    padding: 10px;
+    background-color: #0cd0ee;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.login-container button:hover {
+    background-color: #0dcde7;
+    box-shadow: 0 0px 2px rgba(0, 184, 212, 0.905);
+}
+
+.login-container button:focus {
+    outline: none;
+    box-shadow: 0 0 0px 2px #00B8D4;
+}
+
+
+.forgot-password-container {
+    width: 30%;
+    height: auto;
+    background-color: white;
+    padding: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1), 
+                0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.forgot-header-section{
+    width: 100%;
+    text-align: start;
+    padding: 0 20px 15px 20px;
+    border-bottom: 1px solid #54545E;
+    display: flex;
+    flex-direction: column;
+    gap: 7px
+}
+.forgot-header-section p{
+    font-size: 13px;
+    font-weight: 500;
+    color: #54545E;
+}
+.forgot-header-section h3{
+    font-weight: 700;
+    color: #414143;
+}
+.email-field-container{
+    padding: 20px;
+    width: 100%;
+    border-bottom: 1px solid #54545E;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 7px;
+}
+
+
+.forgot-checked{
+    width: 100%;
+    padding: 13px 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    outline: none;
+    background-color: #F0F8FF;
+    background: none;
+    color: #000000;
+    transition: box-shadow 0.3s, border-color 0.3s;
+    border: 1px solid grey;
+    font-weight: 500;
+}
+.forgot-checked:focus {
+    border-color: #00B8D4;
+    box-shadow: 0 0 0px 1px #2ECAFF;
+}
+
+.forgot-check{
+    width: 100%;
+    padding: 13px 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    outline: none;
+    background-color: #F0F8FF;
+    background: none;
+    color: #000000;
+    transition: box-shadow 0.3s, border-color 0.3s;
+    border: 1px solid red;
+    font-weight: 500;
+}
+.forgot-check::placeholder{
+    color: red;
+}
+.forgot-checked::placeholder{
+    color: gray;
+}
+.forgot-check:focus {
+    border-color: #00B8D4;
+    box-shadow: 0 0 0px 1px #2ECAFF;
+}
+
+
+.btns{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    padding: 20px 20px 0 20px;
+}
+.email-error{
+    font-size: 12px;
+    text-indent: 20px;
+    font-weight: 500;
+    color: red;
+}
+.btn-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.cancel-btn, .send-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.forgot-link{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4FD5ED;
+    cursor: pointer;
+}
+.forgot-link:hover{
+    text-decoration: underline;
+}
+.cancel-btn {
+    background: none;
+    border: 1px solid #54545E;
+    color: #414143;
+}
+
+.send-btn {
+    background-color: #0097a7; 
+    color: white;
+    border: 1px solid #0097a7;
+}
+.cancel-btn:hover {
+    border-color: #008c96;
+}
+
+.send-btn:hover {
+    background-color: #008080;
+    border-color: #008080;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+  .return-login-popup-container{
+    width: 25%;
+    height: 230px;
+    background-color: white;
+    padding: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1), 
+                0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.error-icon{
+    color: red;
+    font-size: 2.8125rem;
+}
+@media(max-width:1200px){
+
+}
+@media(max-width:600px){
+    .login-section{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .assets-container{
+        width: 85%;
+        display: none;
+    }
+    .login-container{
+        width: 100%;
+    }
+    .input-containers{
+        width: 100%;
+    }
+    .login-container button{
+        width: 100%;
+    }
+    .forgot-password-container{
+        width: 80%;
+    }
+    .return-login-popup-container{
+        width: 75%;
+    }
+    .return-login-popup-container p{
+        font-size: 12px;
+    }
+}
