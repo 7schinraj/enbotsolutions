@@ -119,14 +119,6 @@ const Main = () => {
       navbar.classList.remove("sticky");
     }
   };
-  // const handleScroll = () => {
-  //   const navbar = document.getElementById("navbar");
-  //   if (window.pageYOffset > navbar.offsetTop) {
-  //     navbar.classList.add("sticky");
-  //   } else {
-  //     navbar.classList.remove("sticky");
-  //   }
-  // };
 
   const handleScroll = () => {
     const navbar = document.getElementById("navbar");
@@ -139,14 +131,11 @@ const Main = () => {
   };
   
   window.addEventListener("scroll", handleScroll);
-  
-
 
   const closeForm = () => {
     document.body.classList.remove("no-scroll");
     setisForm(false);
   };
-
 
   const changeToClose = () => {
     setIsCloseIc(!isCloseIc);
@@ -156,7 +145,6 @@ const Main = () => {
     navBar.style.position = "fixed";
     navBar.style.zIndex = "20";
   };
-
 
   const changeToMenu = () => {
     setIsCloseIc(!isCloseIc);
@@ -430,7 +418,6 @@ const Main = () => {
             <TfiMenuAlt onClick={changeToClose} className="MenuIcon" />
           )}
           {isCloseIc && <GrClose onClick={changeToMenu} className="MenuIcon" />}
-          <LuLogIn className="login-icon"/>
         </div>
 
         <div id="mobile-nav" className="mobile-nav-container mobile-view">

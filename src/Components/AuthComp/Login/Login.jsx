@@ -4,6 +4,8 @@ import LoginBG from '../../../Assets/LoginBG.svg';
 import LogoLight from '../../../Assets/LogoLight.png';
 import { MdError } from "react-icons/md";
 import { FaLessThanEqual } from 'react-icons/fa';
+// import LogoLight from "../../../Assets/MaxDarkLogo.png";
+// import LogoLight from "../../../Assets/MaxLightLogo.png";
 
 const Login = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
