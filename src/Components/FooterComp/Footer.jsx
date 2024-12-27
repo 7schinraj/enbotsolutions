@@ -70,7 +70,9 @@ const Footer = (props) => {
                        <FaTwitter className='f-icons'/>
                     </div>
                     <div className="ic-bg">
-                       <FaLinkedinIn className='f-icons'/>
+                        <a href="https://www.linkedin.com/company/enbot-solutions/" target="_blank" rel="noopener noreferrer">
+                        <FaLinkedinIn className='f-icons'/>
+                        </a>
                     </div>
                     
                 </div>
