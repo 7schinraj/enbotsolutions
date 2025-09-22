@@ -16,6 +16,8 @@ const Footer = (props) => {
         <div className='footer-container'>
             <div className='footer-datas-container'>
                 <div className='footer-first-container'>
+
+                    
                     <img src={LightLogo} alt="" />
                     <p>Unlock e-commerce intricacies with our advanced crawling solutions for a competitive boost.</p>
                     <p className='contact'>contact</p>
