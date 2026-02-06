@@ -51,12 +51,7 @@ import Pricing from "../Pricing/Pricing";
 import FeatureImg from "../../Assets/FeaturesHomwImg.png"
 
 import Modal from "react-modal";
-import { EditorState } from "draft-js";
-import { Editor } from "react-draft-wysiwyg";
-import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
-import { BiColor } from "react-icons/bi";
 
-const SCROLL_DURATION = 1000;
 Modal.setAppElement("#root");
 
 const Main = () => {
@@ -129,7 +124,7 @@ const Main = () => {
       navbar.classList.remove("sticky");
     }
   };
-  
+
   window.addEventListener("scroll", handleScroll);
 
   const closeForm = () => {
@@ -290,8 +285,8 @@ const Main = () => {
       "--webScrapDivBorderColor",
       "#CAE8F5"
     );
-    document.documentElement.style.setProperty("--FeatureHeaderColor","#BFBECC");
-    document.documentElement.style.setProperty("--tableRogBgColor","rgba(120, 95, 233, 0.084)");
+    document.documentElement.style.setProperty("--FeatureHeaderColor", "#BFBECC");
+    document.documentElement.style.setProperty("--tableRogBgColor", "rgba(120, 95, 233, 0.084)");
 
     setHide(!hide);
     setIsDarkMode(true);
@@ -299,47 +294,47 @@ const Main = () => {
 
   const changeToLightTheme = () => {
     document.documentElement.style.setProperty("--backgroundColor", "#F5F5F5");
-    document.documentElement.style.setProperty("--secondaryTextColor","#3d3f4a");
+    document.documentElement.style.setProperty("--secondaryTextColor", "#3d3f4a");
     document.documentElement.style.setProperty("--navStickyBgcolor", "#F5F5F5");
-    document.documentElement.style.setProperty("--navFirstMenuColor","#7078F9");
-    document.documentElement.style.setProperty("--navSecondMenuColor","#7E5EF7");
+    document.documentElement.style.setProperty("--navFirstMenuColor", "#7078F9");
+    document.documentElement.style.setProperty("--navSecondMenuColor", "#7E5EF7");
     document.documentElement.style.setProperty("--activeMenuColor", "#7078F9");
     document.documentElement.style.setProperty("--menuIconColor", "#000000");
-    document.documentElement.style.setProperty("--homeFirstHeadingColor","#36E0FF");
-    document.documentElement.style.setProperty("--homeSecondHeadingColor","#8650F6");
-    document.documentElement.style.setProperty("--serviceCardBgColor","#ffffff");
-    document.documentElement.style.setProperty("--serviceCardSecondBgColor","rgb(171, 224, 240, 0.932)");
-    document.documentElement.style.setProperty("--serviceImgFirstBgColor","#ffffff");
-    document.documentElement.style.setProperty("--serviceImgSecondBgColor","#a5edf4");
-    document.documentElement.style.setProperty("--serviceCardBorderColor","#ffffff");
-    document.documentElement.style.setProperty("--serviceCardBorderHoverColor","#0F0715");
-    document.documentElement.style.setProperty("--productCardFirstBgColor","#f5f5f5");
-    document.documentElement.style.setProperty("--productCardSecondBgColor","#f5f5f5");
-    document.documentElement.style.setProperty("--productivityBgColor","#a3e4f0");
-    document.documentElement.style.setProperty("--productivityHeaderColor","#3d3f4a");
+    document.documentElement.style.setProperty("--homeFirstHeadingColor", "#36E0FF");
+    document.documentElement.style.setProperty("--homeSecondHeadingColor", "#8650F6");
+    document.documentElement.style.setProperty("--serviceCardBgColor", "#ffffff");
+    document.documentElement.style.setProperty("--serviceCardSecondBgColor", "rgb(171, 224, 240, 0.932)");
+    document.documentElement.style.setProperty("--serviceImgFirstBgColor", "#ffffff");
+    document.documentElement.style.setProperty("--serviceImgSecondBgColor", "#a5edf4");
+    document.documentElement.style.setProperty("--serviceCardBorderColor", "#ffffff");
+    document.documentElement.style.setProperty("--serviceCardBorderHoverColor", "#0F0715");
+    document.documentElement.style.setProperty("--productCardFirstBgColor", "#f5f5f5");
+    document.documentElement.style.setProperty("--productCardSecondBgColor", "#f5f5f5");
+    document.documentElement.style.setProperty("--productivityBgColor", "#a3e4f0");
+    document.documentElement.style.setProperty("--productivityHeaderColor", "#3d3f4a");
     document.documentElement.style.setProperty("--tableBgColor", "#F5F5F5");
     document.documentElement.style.setProperty("--tableBorderColor", "#2D2E41");
     document.documentElement.style.setProperty("--tableTextColor", "#3F3E3E");
     document.documentElement.style.setProperty("--footerBgColor", "#F5F5F5");
-    document.documentElement.style.setProperty("--footerBorderColor","#000000");
-    document.documentElement.style.setProperty("--footerAngerTextColor","#3d3f4a");
-    document.documentElement.style.setProperty("--footerHeaderTextColor","#3F3E3E");
-    document.documentElement.style.setProperty("--footerAngerHoverTextColor","#8650F6");
+    document.documentElement.style.setProperty("--footerBorderColor", "#000000");
+    document.documentElement.style.setProperty("--footerAngerTextColor", "#3d3f4a");
+    document.documentElement.style.setProperty("--footerHeaderTextColor", "#3F3E3E");
+    document.documentElement.style.setProperty("--footerAngerHoverTextColor", "#8650F6");
     document.documentElement.style.setProperty("--footerIconsColor", "#3d3f4a");
-    document.documentElement.style.setProperty("--footerIconsHoverColor","#0F0715");
+    document.documentElement.style.setProperty("--footerIconsHoverColor", "#0F0715");
     document.documentElement.style.setProperty("--footerBtnColor", "#3d3f4a");
     document.documentElement.style.setProperty("--footerMailColor", "#0F0715");
     document.documentElement.style.setProperty("--menuIconColor", "#0F0715");
-    document.documentElement.style.setProperty("--socialMediaIconBgColor","#F5F5F5");
-    document.documentElement.style.setProperty("--socialMediaIconBorderColor","#0F0715");
+    document.documentElement.style.setProperty("--socialMediaIconBgColor", "#F5F5F5");
+    document.documentElement.style.setProperty("--socialMediaIconBorderColor", "#0F0715");
     document.documentElement.style.setProperty("--mobileNavBgColor", "#F5F5F5");
-    document.documentElement.style.setProperty("--mobileNavIconsColor","#8650F6");
-    document.documentElement.style.setProperty("--mobileNavTextColor","#0F0715");
+    document.documentElement.style.setProperty("--mobileNavIconsColor", "#8650F6");
+    document.documentElement.style.setProperty("--mobileNavTextColor", "#0F0715");
     document.documentElement.style.setProperty("--overlayBgColor", "#000000");
     document.documentElement.style.setProperty("--pricingTextColor", "#3d3f4a");
-    document.documentElement.style.setProperty("--webScrapDivBorderColor","#F5F5F5");
-    document.documentElement.style.setProperty("--FeatureHeaderColor","#0F0715");
-    document.documentElement.style.setProperty("--tableRogBgColor","rgba(41, 41, 56, 0.784)");
+    document.documentElement.style.setProperty("--webScrapDivBorderColor", "#F5F5F5");
+    document.documentElement.style.setProperty("--FeatureHeaderColor", "#0F0715");
+    document.documentElement.style.setProperty("--tableRogBgColor", "rgba(41, 41, 56, 0.784)");
 
     setHide(!hide);
     setIsDarkMode(false);
@@ -348,7 +343,7 @@ const Main = () => {
   const handleEmailClick = () => {
     const mailto = `mailto:support@enbotsolutions.com?subject=Need%20Assistance&body=Hello%20Team,%0D%0A%0D%0AWrite%20your%20message%20here.%0D%0A%0D%0ARegards,%0D%0A[enbot%20Name]`;
     window.location.href = mailto;
-    
+
   };
   return (
     <>
@@ -459,7 +454,7 @@ const Main = () => {
       <Element className="service-section">
         <div name="services" id="services" className="service-intro-section">
           <div className="header-container">
-              <h2 className="sec-headers">Services</h2>
+            <h2 className="sec-headers">Services</h2>
           </div>
           <h1>Unveiling Our Unique Edge.</h1>
           <p>
@@ -535,7 +530,7 @@ const Main = () => {
         </section>
       </Element>
 
-      <WebScrapping/>
+      <WebScrapping />
       <Element id="products" name="products">
         <section>
           <div className="product-intro-section">
@@ -588,7 +583,7 @@ const Main = () => {
       </Element>
 
       <Element id="pricing" name="pricing">
-        <Pricing/>
+        <Pricing />
       </Element>
 
       <section className="experience-container">
@@ -608,7 +603,7 @@ const Main = () => {
         </div>
         <img className="snake-shape-img" src={SnakeShapeImg} alt="" />
       </section>
-      
+
       <section className="productivity-container">
         <div className="productivity-contents">
           <h1>Let's Chat & Increase Your Productivity.</h1>
@@ -627,7 +622,7 @@ const Main = () => {
           <FaArrowRight />
         </button>
       </section>
-     
+
       <section className="faqs-container">
         <div className="faqs-contents">
           <p>OUR FAQS</p>
@@ -645,7 +640,7 @@ const Main = () => {
           ))}
         </div>
       </section>
-      <Footer mailfunc = {handleEmailClick}/>
+      <Footer mailfunc={handleEmailClick} />
     </>
   );
 };
