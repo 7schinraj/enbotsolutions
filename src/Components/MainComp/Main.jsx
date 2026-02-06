@@ -24,6 +24,7 @@ import SettingsImg from "../../Assets/Settings.png";
 import BarChat from "../../Assets/BarChart.png";
 import BinocularsImg from "../../Assets/Binoculars.png";
 import Home from "../HomeComp/Home";
+import StudentProjects from "../StudentProjects/StudentProjects";
 import WhoWeAre from "../WhoWeAreComp/WhoWeAre";
 import GrowthImg from "../../Assets/GrowthImg.png";
 import ProductCard from "../ProductCard/ProductCard";
@@ -381,6 +382,11 @@ const Main = () => {
             </ScrollLink>
           </li>
           <li>
+            <ScrollLink to="projects" spy={true} duration={500} offset={-150}>
+              Student Projects
+            </ScrollLink>
+          </li>
+          <li>
             <ScrollLink to="pricing" spy={true} duration={500} offset={-100}>
               Pricing
             </ScrollLink>
@@ -575,6 +581,10 @@ const Main = () => {
             />
           </div>
         </section>
+      </Element>
+
+      <Element id="projects" name="projects">
+        <StudentProjects />
       </Element>
 
       <Element id="pricing" name="pricing">

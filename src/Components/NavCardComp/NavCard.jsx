@@ -42,6 +42,10 @@ const NavCard = ({ setIsCloseIc, isCloseIc }) => {
                 </li>
                 <li className='NavItem'>
                     <GiPriceTag className='NavMenuIcon' />
+                    <ScrollLink className="NavMenu" to="projects" spy={true} duration={650} onClick={changeMenuView} offset={-120}>Student Projects</ScrollLink>
+                </li>
+                <li className='NavItem'>
+                    <GiPriceTag className='NavMenuIcon' />
                     <ScrollLink className="NavMenu" to="pricing" spy={true} duration={700} onClick={changeMenuView} offset={-120}>Pricing</ScrollLink>
                 </li>
                 <li className='NavItem'>
