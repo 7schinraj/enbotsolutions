@@ -3,12 +3,12 @@ import "./Home.css";
 import Shape1 from "../../Assets/Shape1.png";
 import Shape2 from "../../Assets/Shape2.svg";
 import Shape3 from "../../Assets/Shape3.svg";
-import HomeImg from "../../Assets/HomePageImg.png";
+
 const Home = (props) => {
   return (
     <div>
       <section className="home-container">
-       
+
         <div className="intro-section">
           <div className="intro-text">
             <h1>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Main.css";
 import { Link as ScrollLink, Element } from "react-scroll";
 import NavCard from "../NavCardComp/NavCard";
@@ -12,12 +12,8 @@ import LightLogo from "../../Assets/LogoLight.png";
 // import LightLogo from "../../Assets/MaxLightLogo.png";
 
 
-import { MdOutlineDarkMode, MdDarkMode } from "react-icons/md";
-import Shape1 from "../../Assets/Shape1.png";
-import Shape2 from "../../Assets/Shape2.svg";
-import Shape3 from "../../Assets/Shape3.svg";
+import { MdDarkMode } from "react-icons/md";
 import ServiceCard from "../ServiceCard/ServiceCard";
-import { HiOutlineLightBulb } from "react-icons/hi";
 import IdeaImg from "../../Assets/Idea.png";
 import CloudImg from "../../Assets/CloudData.png";
 import DataManagement from "../../Assets/DataManagement.png";
@@ -27,7 +23,6 @@ import QueenImg from "../../Assets/Queen.png";
 import SettingsImg from "../../Assets/Settings.png";
 import BarChat from "../../Assets/BarChart.png";
 import BinocularsImg from "../../Assets/Binoculars.png";
-import { LuLogIn } from "react-icons/lu";
 import Home from "../HomeComp/Home";
 import WhoWeAre from "../WhoWeAreComp/WhoWeAre";
 import GrowthImg from "../../Assets/GrowthImg.png";
@@ -37,16 +32,16 @@ import SnakeShapeImg from "../../Assets/SnakeShapeImg.png";
 import BaloonImg from "../../Assets/ManBaloonImg.png";
 import RocketManImg from "../../Assets/RocketManImg.png";
 import { FaArrowRight } from "react-icons/fa6";
-import Faq from "../FaqComp/FaqComp";
+
 import FaqComp from "../FaqComp/FaqComp";
 import Footer from "../FooterComp/Footer";
-import { IoMenu } from "react-icons/io5";
+
 import { TfiMenuAlt } from "react-icons/tfi";
 import { SiPlatformio } from "react-icons/si";
 import { FiSun } from "react-icons/fi";
 import { GrClose } from "react-icons/gr";
 import { RiCloseLargeLine } from "react-icons/ri";
-import { TbBackground } from "react-icons/tb";
+
 import Pricing from "../Pricing/Pricing";
 import FeatureImg from "../../Assets/FeaturesHomwImg.png"
 
