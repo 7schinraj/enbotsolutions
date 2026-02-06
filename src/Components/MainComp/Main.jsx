@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Reveal, FadeIn } from "../Animations/Reveal";
 import "./Main.css";
 import { Link as ScrollLink, Element } from "react-scroll";
 import NavCard from "../NavCardComp/NavCard";
@@ -91,6 +92,29 @@ const Main = () => {
       data: "How often is data updated using your bot mechanism",
       des: "Yes, our bot mechanism is capable of handling large-scale data extraction projects efficiently. Whether you need to crawl thousands of product listings or monitor multiple e-commerce websites simultaneously, ENBOT's bots can scale to meet your needs while maintaining high performance and reliability.",
     },
+  ];
+
+  const servicesData = [
+    { image: IdeaImg, title: "Innovative Funding", des: "Strategize funding to fuel innovation and expansion, tailored to your business's stage." },
+    { image: CloudImg, title: "Cloud Data Architecture", des: "Scale and manage big data effortlessly in the cloud, empowering users with deep insights and enhanced analytics." },
+    { image: DataManagement, title: "Data-Driven Success", des: "Elevate digital team performance through expert analytics and optimization, driving transformative results." },
+    { image: GameImg, title: "Business Intel Excellence", des: "Foster a data-centric culture for unified insights and business transformation." },
+    { image: AiImg, title: "AI-Powered Solutions", des: "Leverage AI to solve complex challenges and unlock data potential, regardless of company size." },
+    { image: QueenImg, title: "Strategic Data Utilization", des: "Boost ROI and company valuation through optimized data strategies." },
+    { image: SettingsImg, title: "Streamlined Automation", des: "Drive efficiency and innovation while minimizing errors with automated workflows." },
+    { image: BarChat, title: "Conversion Optimization", des: "Optimize conversion rates with data-driven methodologies for growth." },
+    { image: BinocularsImg, title: "Real-Time Intelligence", des: "Monitor competitors and industries in real-time for actionable intelligence and price monitoring." }
+  ];
+
+  const productsData = [
+    { title: "AI & ML Solutions", des: "Craft and deploy bespoke AI solutions to propel your organization forward at unprecedented speeds. Seamlessly integrate pre-built ML pipelines into your web applications." },
+    { title: "Personalization Excellence", des: "Effortlessly tailor every aspect of your digital presence for maximum impact. Streamline website performance and enhance data precision to accelerate revenue growth." },
+    { title: "Visionary CV", des: "Unlock insights from images and videos using tailored deep learning methodologies. Optimize SEO and elevate website UX with advanced computer vision techniques." },
+    { title: "Dynamic Recommender", des: "Leverage potent AI algorithms to intelligently refine recommendations and maximize business outcomes." },
+    { title: "Price Intelligence", des: "Monitor competitor pricing and stock levels in real-time with our tailored comparison and repricing tool." },
+    { title: "Discovery Master", des: "Extract product information and standardize identification across platforms with advanced ML techniques." },
+    { title: "Real-time Insights", des: "Unearth invaluable customer insights and enhance user experiences by analyzing user behavior in real-time." },
+    { title: "Automated SEO", des: "Streamline optimization efforts with automated ML tools, from monitoring rankings to optimizing discovery and UX." }
   ];
 
   const [hide, setHide] = useState(false);
@@ -284,6 +308,14 @@ const Main = () => {
     document.documentElement.style.setProperty("--FeatureHeaderColor", "#BFBECC");
     document.documentElement.style.setProperty("--tableRogBgColor", "rgba(120, 95, 233, 0.084)");
 
+    // Student Projects Dark Theme
+    document.documentElement.style.setProperty("--studentProjectBg", "linear-gradient(145deg, rgba(15, 7, 21, 0.9), rgba(23, 24, 45, 0.9))");
+    document.documentElement.style.setProperty("--studentProjectBorder", "rgba(54, 224, 255, 0.1)");
+    document.documentElement.style.setProperty("--studentProjectShadow", "0 4px 6px rgba(0, 0, 0, 0.3)");
+    document.documentElement.style.setProperty("--studentProjectHoverShadow", "0 10px 20px rgba(54, 224, 255, 0.15), 0 0 15px rgba(134, 80, 246, 0.2)");
+    document.documentElement.style.setProperty("--studentProjectHoverBorder", "rgba(54, 224, 255, 0.5)");
+    document.documentElement.style.setProperty("--studentProjectTextColor", "#FFFFFF");
+
     setHide(!hide);
     setIsDarkMode(true);
   };
@@ -331,6 +363,14 @@ const Main = () => {
     document.documentElement.style.setProperty("--webScrapDivBorderColor", "#F5F5F5");
     document.documentElement.style.setProperty("--FeatureHeaderColor", "#0F0715");
     document.documentElement.style.setProperty("--tableRogBgColor", "rgba(41, 41, 56, 0.784)");
+
+    // Student Projects Light Theme
+    document.documentElement.style.setProperty("--studentProjectBg", "#ffffff");
+    document.documentElement.style.setProperty("--studentProjectBorder", "#e0e0e0");
+    document.documentElement.style.setProperty("--studentProjectShadow", "0 4px 6px rgba(0, 0, 0, 0.1)");
+    document.documentElement.style.setProperty("--studentProjectHoverShadow", "0 10px 20px rgba(0, 0, 0, 0.1)");
+    document.documentElement.style.setProperty("--studentProjectHoverBorder", "#7078F9");
+    document.documentElement.style.setProperty("--studentProjectTextColor", "#3F3E3E");
 
     setHide(!hide);
     setIsDarkMode(false);
@@ -455,61 +495,31 @@ const Main = () => {
       <Element className="service-section">
         <div name="services" id="services" className="service-intro-section">
           <div className="header-container">
-            <h2 className="sec-headers">Services</h2>
+            <Reveal>
+              <h2 className="sec-headers">Services</h2>
+            </Reveal>
           </div>
-          <h1>Unveiling Our Unique Edge.</h1>
-          <p>
-            Unlock your potential with our dynamic range of services tailored to
-            meet your needs. From strategy to execution, we're your partner in
-            achieving excellence.
-          </p>
+          <Reveal delay={0.2}>
+            <h1>Unveiling Our Unique Edge.</h1>
+          </Reveal>
+          <Reveal delay={0.4}>
+            <p>
+              Unlock your potential with our dynamic range of services tailored to
+              meet your needs. From strategy to execution, we're your partner in
+              achieving excellence.
+            </p>
+          </Reveal>
         </div>
         <div className="services-grid-container">
-          <ServiceCard
-            image={IdeaImg}
-            title="Innovative Funding"
-            des="Strategize funding to fuel innovation and expansion, tailored to your business's stage."
-          />
-          <ServiceCard
-            image={CloudImg}
-            title="Cloud Data Architecture"
-            des="Scale and manage big data effortlessly in the cloud, empowering users with deep insights and enhanced analytics."
-          />
-          <ServiceCard
-            image={DataManagement}
-            title="Data-Driven Success"
-            des="Elevate digital team performance through expert analytics and optimization, driving transformative results."
-          />
-          <ServiceCard
-            image={GameImg}
-            title="Business Intel Excellence"
-            des="Foster a data-centric culture for unified insights and business transformation."
-          />
-          <ServiceCard
-            image={AiImg}
-            title="AI-Powered Solutions"
-            des="Leverage AI to solve complex challenges and unlock data potential, regardless of company size."
-          />
-          <ServiceCard
-            image={QueenImg}
-            title="Strategic Data Utilization"
-            des="Boost ROI and company valuation through optimized data strategies."
-          />
-          <ServiceCard
-            image={SettingsImg}
-            title="Streamlined Automation"
-            des="Drive efficiency and innovation while minimizing errors with automated workflows."
-          />
-          <ServiceCard
-            image={BarChat}
-            title="Conversion Optimization"
-            des="Optimize conversion rates with data-driven methodologies for growth."
-          />
-          <ServiceCard
-            image={BinocularsImg}
-            title="Real-Time Intelligence"
-            des="Monitor competitors and industries in real-time for actionable intelligence and price monitoring."
-          />
+          {servicesData.map((service, index) => (
+            <ServiceCard
+              key={index}
+              index={index}
+              image={service.image}
+              title={service.title}
+              des={service.des}
+            />
+          ))}
         </div>
       </Element>
 
@@ -536,49 +546,31 @@ const Main = () => {
         <section>
           <div className="product-intro-section">
             <div className="header-container">
-              <h2 className="sec-headers">Products</h2>
+              <Reveal>
+                <h2 className="sec-headers">Products</h2>
+              </Reveal>
             </div>
-            <h1>Our Innovation Trove.</h1>
-            <p>
-              Elevate your business with our cutting-edge products on an
-              intelligent platform. In today's data-driven era of AI, failing to
-              leverage this technology means conceding ground to your
-              competitors. Stay ahead of the curve with our powerful solutions.
-            </p>
+            <Reveal delay={0.2}>
+              <h1>Our Innovation Trove.</h1>
+            </Reveal>
+            <Reveal delay={0.4}>
+              <p>
+                Elevate your business with our cutting-edge products on an
+                intelligent platform. In today's data-driven era of AI, failing to
+                leverage this technology means conceding ground to your
+                competitors. Stay ahead of the curve with our powerful solutions.
+              </p>
+            </Reveal>
           </div>
           <div className="product-flex-container">
-            <ProductCard
-              title="AI & ML Solutions"
-              des="Craft and deploy bespoke AI solutions to propel your organization forward at unprecedented speeds. Seamlessly integrate pre-built ML pipelines into your web applications."
-            />
-            <ProductCard
-              title="Personalization Excellence"
-              des="Effortlessly tailor every aspect of your digital presence for maximum impact. Streamline website performance and enhance data precision to accelerate revenue growth."
-            />
-            <ProductCard
-              title="Visionary CV"
-              des="Unlock insights from images and videos using tailored deep learning methodologies. Optimize SEO and elevate website UX with advanced computer vision techniques."
-            />
-            <ProductCard
-              title="Dynamic Recommender"
-              des="Leverage potent AI algorithms to intelligently refine recommendations and maximize business outcomes."
-            />
-            <ProductCard
-              title="Price Intelligence"
-              des="Monitor competitor pricing and stock levels in real-time with our tailored comparison and repricing tool."
-            />
-            <ProductCard
-              title="Discovery Master"
-              des="Extract product information and standardize identification across platforms with advanced ML techniques."
-            />
-            <ProductCard
-              title="Real-time Insights"
-              des="Unearth invaluable customer insights and enhance user experiences by analyzing user behavior in real-time."
-            />
-            <ProductCard
-              title="Automated SEO"
-              des="Streamline optimization efforts with automated ML tools, from monitoring rankings to optimizing discovery and UX."
-            />
+            {productsData.map((product, index) => (
+              <ProductCard
+                key={index}
+                index={index}
+                title={product.title}
+                des={product.des}
+              />
+            ))}
           </div>
         </section>
       </Element>

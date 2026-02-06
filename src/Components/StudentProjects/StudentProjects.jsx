@@ -3,13 +3,22 @@ import './StudentProjects.css';
 import { FaPython, FaJava, FaNodeJs, FaPhp, FaReact, FaBrain } from 'react-icons/fa';
 import { SiTensorflow, SiFlutter, SiMongodb } from 'react-icons/si';
 
-const ProjectCard = ({ icon, title, des }) => {
+import { Reveal, FadeIn } from '../Animations/Reveal';
+import { motion } from 'framer-motion';
+
+const ProjectCard = ({ icon, title, des, index }) => {
     return (
-        <div className="project-card">
+        <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            className="project-card"
+        >
             <div className="project-icon">{icon}</div>
             <h1>{title}</h1>
             <p>{des}</p>
-        </div>
+        </motion.div>
     );
 };
 
@@ -61,17 +70,23 @@ const StudentProjects = () => {
         <section className="student-projects-container">
             <div className="student-intro-section">
                 <div className="header-container">
-                    <h2 className="sec-headers">Student Projects</h2>
+                    <Reveal>
+                        <h2 className="sec-headers">Student Projects</h2>
+                    </Reveal>
                 </div>
-                <h1>Empowering Future Innovators.</h1>
-                <p>
-                    We provide high-quality, industry-standard final year projects for college students.
-                    From documentation to implementation, get everything you need to score high.
-                </p>
+                <Reveal delay={0.2}>
+                    <h1>Empowering Future Innovators.</h1>
+                </Reveal>
+                <Reveal delay={0.4}>
+                    <p>
+                        We provide high-quality, industry-standard final year projects for college students.
+                        From documentation to implementation, get everything you need to score high.
+                    </p>
+                </Reveal>
             </div>
             <div className="projects-grid-container">
                 {projects.map((project, index) => (
-                    <ProjectCard key={index} icon={project.icon} title={project.title} des={project.des} />
+                    <ProjectCard key={index} index={index} icon={project.icon} title={project.title} des={project.des} />
                 ))}
             </div>
         </section>

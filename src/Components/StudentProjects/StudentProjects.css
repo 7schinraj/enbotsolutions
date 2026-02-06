@@ -11,10 +11,15 @@
     margin: 0 auto;
     text-align: center;
     margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .student-intro-section .header-container {
     align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -33,6 +38,7 @@
     line-height: 27px;
     width: 60%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .projects-grid-container {
@@ -53,9 +59,9 @@
     align-items: center;
     border-radius: 20px;
     transition: all 0.3s ease;
-    background: linear-gradient(145deg, rgba(15, 7, 21, 0.9), rgba(23, 24, 45, 0.9));
-    border: 1px solid rgba(54, 224, 255, 0.1);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    background: var(--studentProjectBg);
+    border: 1px solid var(--studentProjectBorder);
+    box-shadow: var(--studentProjectShadow);
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -75,8 +81,8 @@
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(54, 224, 255, 0.15), 0 0 15px rgba(134, 80, 246, 0.2);
-    border-color: rgba(54, 224, 255, 0.5);
+    box-shadow: var(--studentProjectHoverShadow);
+    border: 1px solid var(--studentProjectHoverBorder);
 }
 
 .project-card:hover::before {
@@ -96,7 +102,7 @@
 }
 
 .project-card h1 {
-    color: var(--homeFirstHeadingColor);
+    color: var(--studentProjectTextColor);
     font-size: 20px;
     font-weight: 600;
 }
